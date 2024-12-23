@@ -1,0 +1,55 @@
+/* FormWithValidation.css */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+    text-align: center;
+    color: #ffd700;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #2e2e3f;
+    color: #ffffff;
+}
+
+.form-error {
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd700;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #e5c100;
+}
