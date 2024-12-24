@@ -1,55 +1,121 @@
-/* FormWithValidation.css */
+* {
+    box-sizing: border-box;
+}
+
 .form-container {
-    max-width: 400px;
+    max-width: 800px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #1e1e2f;
+    padding: 30px;
+    background-color: #fff;
     border-radius: 10px;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-title {
+    font-size: 26px;
+    font-weight: bold;
     text-align: center;
-    color: #ffd700;
+    color: #002f6c;
+    margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+.tab {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #002f6c;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #00458f;
+}
+
+.tab:active {
+    opacity: 0.7;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00458f;
+    margin-bottom: 10px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #333;
 }
 
 .form-input {
-    width: 90%;
+    width: 100%;
+    max-width: 500px;
     padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: 1px solid #555;
-    background-color: #2e2e3f;
-    color: #ffffff;
 }
 
-.form-error {
-    color: #ff6b6b;
+.form-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 14px;
+    color: #333;
 }
 
 .form-button {
     width: 100%;
-    padding: 10px;
-    background-color: #ffd700;
-    color: #1e1e2f;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #002f6c;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .form-button:hover {
-    background-color: #e5c100;
+    background-color: #00458f;
+}
+
+.form-button:focus {
+    outline: 2px solid #00458f;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .form-group-row {
+        flex-direction: column;
+    }
 }
